@@ -7,8 +7,8 @@ import { WebsocketService } from '../services/websocket.service';
   selector: 'app-chat',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './chat.component.html', // Lien vers le fichier HTML
-  styleUrls: ['./chat.component.css'],  // Lien vers le fichier CSS
+  templateUrl: './chat.component.html', 
+  styleUrls: ['./chat.component.css'],  
 })
 export class ChatComponent implements OnInit {
   messages: string[] = [];

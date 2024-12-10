@@ -5,7 +5,10 @@ import { ChatComponent } from './chat/chat.component';
   selector: 'app-root',
   standalone: true,
   imports: [ChatComponent],
-  templateUrl: './app.component.html', // Lien vers le fichier HTML
-  styleUrls: ['./app.component.css'],  // Lien vers le fichier CSS
+  templateUrl: './app.component.html', 
+  styleUrls: ['./app.component.css'],  
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'websocket-client';
+
+}

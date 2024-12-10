@@ -9,7 +9,7 @@ export class WebsocketService {
   private socket: Socket;
 
   constructor() {
-    this.socket = io('http://localhost:3000'); // URL de ton serveur WebSocket
+    this.socket = io('http://localhost:3000'); // URL serveur WebSocket
   }
 
   // Écouter les messages depuis le serveur

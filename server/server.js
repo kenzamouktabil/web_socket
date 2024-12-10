@@ -4,17 +4,17 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 
 const app = express();
-app.use(cors()); // Permettre les connexions cross-origin
+app.use(cors()); 
 
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:4200", // URL de l'application Angular
+        origin: "http://localhost:4200", // URL  Angular
         methods: ["GET", "POST"]
     }
 });
 
-// Gérer les connexions WebSocket
+
 io.on('connection', (socket) => {
     console.log('Un utilisateur s\'est connecté');
 

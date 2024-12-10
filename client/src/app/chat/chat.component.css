@@ -6,62 +6,62 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  background: #ffe4e6; /* Rose clair */
+  background: #ffe4e6;
 }
 
 h2 {
-  background-color: #bd2eac; /* Rose foncé */
+  background-color: #bd2eac;
   color: white;
   margin: 0;
   padding: 15px;
 }
 
 .messages {
-  border: 1px solid #dcbcd8; /* Mauve moyen */
+  border: 1px solid #dcbcd8;
   height: 250px;
   overflow-y: auto;
   margin: 0;
   padding: 10px;
-  background: #e9d4f0; /* Mauve clair */
+  background: #e9d4f0;
 }
 
 .message {
   margin: 5px auto;
   padding: 10px;
-  background-color: #e996e2; /* Rose moyen */
+  background-color: #e996e2;
   border-radius: 8px;
   text-align: center;
   width: fit-content;
   max-width: 80%;
-  color: #a536a5; /* Mauve foncé pour le texte */
+  color: #a536a5;
 }
 
 .input-container {
   display: flex;
   padding: 10px;
-  background-color: #ebd8f1; /* Mauve clair */
-  border-top: 1px solid #c084d4; /* Mauve moyen */
+  background-color: #ebd8f1;
+  border-top: 1px solid #c084d4;
 }
 
 input {
   flex: 1;
-  border: 1px solid #c084d4; /* Mauve moyen */
+  border: 1px solid #c084d4;
   border-radius: 4px;
   padding: 10px;
   font-size: 16px;
   outline: none;
   margin-right: 10px;
-  background-color: #f1e3f0; /* Rose clair */
-  color: #993399; /* Mauve foncé */
+  background-color: #f1e3f0;
+  color: #993399;
 }
 
 input:focus {
-  border-color: #993399; /* Rose foncé */
+  border-color: #993399;
   box-shadow: 0 0 5px #993399;
 }
 
 button {
-  background-color: #993399; /* Rose foncé */
+  background-color: #993399;
   border: none;
   color: white;
   padding: 10px 15px;
@@ -72,9 +72,9 @@ button {
 }
 
 button:hover {
-  background-color: #ff99e4; /* Rose moyen */
+  background-color: #ff99e4;
 }
 
 button:active {
-  background-color: #993399; /* Mauve foncé */
+  background-color: #993399;
 }
