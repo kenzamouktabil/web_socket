@@ -1,20 +1,80 @@
 .chat-container {
-    width: 400px;
-    margin: 20px auto;
-    text-align: center;
-  }
-  .messages {
-    border: 1px solid #ccc;
-    height: 200px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
-  input {
-    width: 70%;
-    padding: 5px;
-  }
-  button {
-    padding: 5px 10px;
-  }
-  
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffe4e6; /* Rose clair */
+}
+
+h2 {
+  background-color: #bd2eac; /* Rose foncé */
+  color: white;
+  margin: 0;
+  padding: 15px;
+}
+
+.messages {
+  border: 1px solid #dcbcd8; /* Mauve moyen */
+  height: 250px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 10px;
+  background: #e9d4f0; /* Mauve clair */
+}
+
+.message {
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #e996e2; /* Rose moyen */
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  max-width: 80%;
+  color: #a536a5; /* Mauve foncé pour le texte */
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #ebd8f1; /* Mauve clair */
+  border-top: 1px solid #c084d4; /* Mauve moyen */
+}
+
+input {
+  flex: 1;
+  border: 1px solid #c084d4; /* Mauve moyen */
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+  background-color: #f1e3f0; /* Rose clair */
+  color: #993399; /* Mauve foncé */
+}
+
+input:focus {
+  border-color: #993399; /* Rose foncé */
+  box-shadow: 0 0 5px #993399;
+}
+
+button {
+  background-color: #993399; /* Rose foncé */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff99e4; /* Rose moyen */
+}
+
+button:active {
+  background-color: #993399; /* Mauve foncé */
+}

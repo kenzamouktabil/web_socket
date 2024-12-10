@@ -1,4 +1,10 @@
 h1 {
-    text-align: center;
-  }
+  text-align: center; /* Centrer le texte */
+  font-family: 'Arial', sans-serif; /* Police sans-serif moderne */
+  font-size: 2.5rem; /* Taille appropriée pour un titre */
+  font-weight: bold; /* Rendre le titre audacieux */
+  color: #993399; /* Mauve foncé pour un ton élégant */
+  margin: 20px 0; /* Espacement supérieur et inférieur */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Légère ombre pour la lisibilité */
+}
   
