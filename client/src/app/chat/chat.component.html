@@ -1,15 +1,55 @@
 <div class="chat-container">
   <h2>Chat Application</h2>
+
+  <!-- Zone des messages -->
   <div class="messages">
     <div *ngFor="let message of messages" class="message">
-      {{ message }}
+      <!-- Affichage des messages texte -->
+      <div *ngIf="message.type === 'text'">
+        {{ message.content }}
+      </div>
+
+      <!-- Affichage des fichiers audio -->
+      <div *ngIf="message.type === 'audio'">
+        <p>{{ message.name }}</p>
+        <audio controls>
+          <source [src]="message.content" type="audio/webm" />
+          Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+      </div>
+
+      <!-- Affichage des fichiers généraux -->
+      <div *ngIf="message.type === 'file'">
+        <p>{{ message.name }}</p>
+        <!-- Affichage des images -->
+        <img
+          *ngIf="message.content.startsWith('data:image')"
+          [src]="message.content"
+          alt="{{ message.name }}"
+          width="150"
+        />
+        <!-- Lien de téléchargement pour les autres fichiers -->
+        <a
+          *ngIf="!message.content.startsWith('data:image')"
+          [href]="message.content"
+          download="{{ message.name }}"
+        >
+          Télécharger {{ message.name }}
+        </a>
+      </div>
     </div>
   </div>
+
+  <!-- Zone d'entrée de texte, fichier  -->
   <div class="input-container">
-    <input
-      [(ngModel)]="message"
-      placeholder="Type your message here"
-    />
+    <input [(ngModel)]="message" placeholder="Type your message here" />
+    <input type="file" (change)="handleFileInput($event)" />
     <button (click)="sendMessage()">Send</button>
   </div>
+
+  <!-- Contrôles pour enregistrer l'audio -->
+<div class="audio-controls">
+  <button class="R" (click)="startRecording()">🎤 Start </button>
+  <button class="R" (click)="stopRecording()">⏹ Stop </button>
+</div>
 </div>
