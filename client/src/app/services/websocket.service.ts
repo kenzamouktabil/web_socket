@@ -9,7 +9,7 @@ export class WebsocketService {
   private socket: Socket;
 
   constructor() {
-      this.socket = io('http://localhost:3000');
+      this.socket = io('http://192.168.0.145:3000');
     
     }
       
